@@ -24,6 +24,9 @@ version = '1.3.4'
 hex-literal = { optional = true, version = '0.3.1' }
 serde = { features = ['derive'], optional = true, version = '1.0.119' }
 
+# Imported Dependancies
+pallet-nicks = { default-features = false, version = '2.0.0' }
+
 # local dependencies
 pallet-template = { path = '../pallets/template', default-features = false, version = '2.0.1' }
 
@@ -67,6 +70,7 @@ runtime-benchmarks = [
     'sp-runtime/runtime-benchmarks',
 ]
 std = [
+    'pallet-nicks/std',
     'codec/std',
     'serde',
     'frame-executive/std',
