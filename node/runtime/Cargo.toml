@@ -70,6 +70,7 @@ runtime-benchmarks = [
     'sp-runtime/runtime-benchmarks',
 ]
 std = [
+    'pallet-scheduler/std',
     'pallet-nicks/std',
     'codec/std',
     'serde',
